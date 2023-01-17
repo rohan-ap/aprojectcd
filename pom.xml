@@ -41,7 +41,7 @@
           <artifactId>maven-resources-plugin</artifactId>
           <version>3.0.2</version>
         </plugin>
-        <pluginGroup>org.sonarsource.scanner.maven</pluginGroup>
+        <artifactId>org.sonarsource.scanner.maven</artifactId>
         <plugin>
           <artifactId>maven-compiler-plugin</artifactId>
           <version>3.8.0</version>
