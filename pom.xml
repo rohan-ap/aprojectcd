@@ -77,8 +77,8 @@
             </activation>
             <properties>
                <sonar.host.url>https://sonar-pipeline-private.apps.cluster-9pmm6.9pmm6.sandbox2372.opentlc.com/</sonar.host.url>
-	       <sonar.login>sqp_e0f4add730e36547598cae06f990fdb32faa5516</sonar.login>
-               <sonar.projectName>rohan</sonar.projectName>
+	       <sonar.login>squ_d515d1e6d8d92eef141cd6fab41bee52cd0ccb1b</sonar.login>
+               <sonar.projectName>rohan1</sonar.projectName>
                <sonar.projectVersion>main</sonar.projectVersion>
                <sonar.test.exclusions>**/test/**/*.*</sonar.test.exclusions>
                <sonar.exclusions>**/ai/**/*.*,**/jdbc/**/*.*,**/mpt/**/*.*,**/jcr/**/*.*,**/JDBC*</sonar.exclusions>
