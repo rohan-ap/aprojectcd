@@ -42,9 +42,9 @@
           <version>3.0.2</version>
         </plugin>
           <plugin>
-            <groupId>org.codehaus.mojo</groupId>
+            <groupId>org.sonarsource.scanner.maven</groupId>
             <artifactId>sonar-maven-plugin</artifactId>
-            <version>2.6</version>
+            <version>3.9.1.2184</version>
         </plugin>
         <plugin>
           <artifactId>maven-compiler-plugin</artifactId>
@@ -69,4 +69,20 @@
       </plugins>
     </pluginManagement>
   </build>
+  <profiles>
+        <profile>
+            <id>sonar</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <properties>
+               <sonar.host.url>https://sonar-pipeline-private.apps.cluster-9pmm6.9pmm6.sandbox2372.opentlc.com/</sonar.host.url>
+	       <sonar.login>sqp_e0f4add730e36547598cae06f990fdb32faa5516</sonar.login>
+               <sonar.projectName>rohan</sonar.projectName>
+               <sonar.projectVersion>main</sonar.projectVersion>
+               <sonar.test.exclusions>**/test/**/*.*</sonar.test.exclusions>
+               <sonar.exclusions>**/ai/**/*.*,**/jdbc/**/*.*,**/mpt/**/*.*,**/jcr/**/*.*,**/JDBC*</sonar.exclusions>
+            </properties>
+        </profile>
+        <profile>
 </project>
