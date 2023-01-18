@@ -84,5 +84,5 @@
                <sonar.exclusions>**/ai/**/*.*,**/jdbc/**/*.*,**/mpt/**/*.*,**/jcr/**/*.*,**/JDBC*</sonar.exclusions>
             </properties>
         </profile>
-        <profile>
+        </profiles>
 </project>
